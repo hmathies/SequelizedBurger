@@ -3,7 +3,7 @@
 <div class="hero">
   <div class="container has-text-centered">
     <h1 class="title">
-      Eat Da Burger
+      Sequelized Burger
     </h1>
   </div>
 </div>
@@ -16,7 +16,7 @@
       <h2 class="eatMenu">Burgers to eat!</h2>
 
       <ul>
-        {{#each burgers}}
+        {{#each burger}}
           {{#unless this.devoured}}
             <div>
               <a href="#" class="burgers2eat" data-id="{{this.id}}">{{this.burger_name}}</a>
@@ -27,7 +27,7 @@
     </div>
 
     <div class="column" id="form-div">
-      <form action="/burgers" method="POST">
+      <form action="/burgers/create" method="POST">
         <div class="field has-addons">
           <div class="control">
             <input class="input" type="text" id="burger-input" name="burger_name" placeholder="Yummy Burger">
@@ -44,7 +44,7 @@
       <h2 class="eatMenu">Burgers eaten!</h2>
 
       <ul>
-        {{#each burgers}}
+        {{#each burger}}
           {{#if this.devoured}}
             <div class='burgerEaten'>
               <div>
