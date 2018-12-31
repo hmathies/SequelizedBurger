@@ -4,10 +4,11 @@ var mysql = require("mysql2");
 // Set Handlebars.
 var exphbs = require("express-handlebars");
 var db = require("./models");
+require("dotenv").config();
 
 var app = express();
 
-var PORT = process.env.PORT || 3000;
+var PORT = process.env.JAWSDB_URL || 3000;
 // Requiring our models for syncing
 
 // Serve static content for the app from the "public" directory in the application directory.

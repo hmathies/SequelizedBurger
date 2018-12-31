@@ -14,10 +14,10 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "ivrbdyi8mjlu694x",
-    "password": "ikpen0oqwwbetds3",
-    "database": "p00btgf1s5z2p6db",
-    "host": "nj5rh9gto1v5n05t.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "username": "process.env.HEROKU_USERNAME",
+    "password": "process.env.HEROKU_PASSWORD",
+    "database": "process.env.DATABASE",
+    "host": "process.env.HOST",
     "dialect": "mysql"
   }
 }
