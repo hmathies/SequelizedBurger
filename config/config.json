@@ -14,10 +14,7 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "process.env.HEROKU_USERNAME",
-    "password": "process.env.HEROKU_PASSWORD",
-    "database": "process.env.DATABASE",
-    "host": "process.env.HOST",
+    "use_env_variable": "JAWSDB_URL",
     "dialect": "mysql"
   }
 }
