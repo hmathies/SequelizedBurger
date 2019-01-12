@@ -8,7 +8,7 @@ require("dotenv").config();
 
 var app = express();
 
-var PORT = process.env.JAWSDB_URL || 3000;
+var PORT = process.env.PORT|| 3000;
 // Requiring our models for syncing
 
 // Serve static content for the app from the "public" directory in the application directory.
